@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="825.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.ufrn.imd.yeamanja.controller.JogoController">
+   <children>
+       <HBox alignment="CENTER" />
+      <GridPane fx:id="oceanoAmigo" gridLinesVisible="true" layoutX="76.0" layoutY="306.0" translateY="-30.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+        </rowConstraints>
+
+          <Pane fx:id="friendCell00" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell01" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell02" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell03" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell04" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell05" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell06" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell07" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell08" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell09" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell10" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell11" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell12" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell13" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell14" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell15" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell16" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell17" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell18" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell19" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell20" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell21" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell22" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell23" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell24" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell25" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell26" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell27" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell28" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell29" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell30" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell31" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell32" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell33" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell34" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell35" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell36" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell37" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell38" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell39" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell40" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell41" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell42" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell43" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell44" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell45" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell46" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell47" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell48" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell49" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell50" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell51" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell52" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell53" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell54" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell55" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell56" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell57" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell58" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell59" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell60" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell61" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell62" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell63" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell64" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell65" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell66" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell67" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell68" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell69" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell70" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell71" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell72" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell73" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell74" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell75" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell76" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell77" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell78" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell79" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell80" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell81" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell82" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell83" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell84" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell85" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell86" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell87" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell88" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell89" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+
+          <Pane fx:id="friendCell90" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="0" />
+          <Pane fx:id="friendCell91" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+          <Pane fx:id="friendCell92" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+          <Pane fx:id="friendCell93" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+          <Pane fx:id="friendCell94" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+          <Pane fx:id="friendCell95" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+          <Pane fx:id="friendCell96" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+          <Pane fx:id="friendCell97" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+          <Pane fx:id="friendCell98" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+          <Pane fx:id="friendCell99" onMouseClicked="#celulaAmigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+      </GridPane>
+      <GridPane fx:id="oceanoInimigo" gridLinesVisible="true" layoutX="525.0" layoutY="306.0" translateY="-30.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="NEVER" />
+         </rowConstraints>
+
+          <Pane fx:id="enemyCell00" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell01" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell02" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell03" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell04" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell05" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell06" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell07" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell08" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell09" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell10" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell11" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell12" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell13" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell14" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell15" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell16" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell17" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell18" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell19" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell20" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell21" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell22" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell23" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell24" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell25" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell26" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell27" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell28" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell29" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell30" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell31" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell32" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell33" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell34" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell35" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell36" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell37" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell38" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell39" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell40" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell41" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell42" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell43" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell44" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell45" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell46" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell47" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell48" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell49" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell50" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell51" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell52" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell53" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell54" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell55" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell56" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell57" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell58" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell59" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell60" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell61" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell62" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell63" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell64" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell65" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell66" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell67" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell68" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell69" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="6" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell70" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell71" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell72" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell73" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell74" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell75" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell76" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell77" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell78" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell79" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="7" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell80" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell81" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell82" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell83" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell84" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell85" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell86" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell87" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell88" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell89" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="9" />
+
+          <Pane fx:id="enemyCell90" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="0" />
+          <Pane fx:id="enemyCell91" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+          <Pane fx:id="enemyCell92" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell93" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+          <Pane fx:id="enemyCell94" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="4" />
+          <Pane fx:id="enemyCell95" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="5" />
+          <Pane fx:id="enemyCell96" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="6" />
+          <Pane fx:id="enemyCell97" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="7" />
+          <Pane fx:id="enemyCell98" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="8" />
+          <Pane fx:id="enemyCell99" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="9" GridPane.rowIndex="9" />
+      </GridPane>
+      <Label layoutX="219.0" layoutY="224.0" text="Seu oceano">
+         <font>
+            <Font name="Carlito Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="647.0" layoutY="238.0" text="Oceano inimigo">
+         <font>
+            <Font name="Carlito Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="botaoAcao" disable="true" layoutX="409.0" layoutY="704.0" mnemonicParsing="false" onAction="#handleIniciarRodada" prefHeight="61.0" prefWidth="183.0" text="Atirar!" />
+        <Label fx:id="statusJogo" layoutX="324.0" layoutY="174.0" text="Selecione uma casa para atacar" textAlignment="CENTER">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+      <Label layoutX="76.0" layoutY="52.0" text="Rodada 1" fx:id="infoRodada">
+         <font>
+            <Font name="Carlito Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

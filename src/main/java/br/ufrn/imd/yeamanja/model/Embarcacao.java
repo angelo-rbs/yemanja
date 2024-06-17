@@ -1,48 +1,78 @@
 package br.ufrn.imd.yeamanja.model;
 
 import br.ufrn.imd.yeamanja.model.enumerations.Orientacao;
+import br.ufrn.imd.yeamanja.model.enumerations.TipoEmbarcacao;
 
-public class Navio {
+import java.util.List;
 
-    Casa casaPivot;
-    Orientacao orientacao;
-    Integer cumprimentoEmCasas;
+public class Embarcacao {
+
+    PosicaoEmbarcacao posicao;
+    TipoEmbarcacao tipoEmbarcacao;
+    List<Casa> casasOcupadas;
 
     // métodos funcionais
 
-
+    public Boolean isNavioAfundado() {
+        return casasOcupadas.stream().allMatch(casa -> casa.getTemTiro() != null);
+    }
 
     // construtor
 
-    public Navio(Casa casaPivot, Orientacao orientacao) {
-        this.casaPivot = casaPivot;
-        this.orientacao = orientacao;
+    public Embarcacao(Casa casaPivot, Orientacao orientacao) {
+        posicao = new PosicaoEmbarcacao(casaPivot, orientacao);
+    }
+
+    public Embarcacao() {
+
     }
 
 
     // métodos de acesso
 
+
+    public PosicaoEmbarcacao getPosicao() {
+        return posicao;
+    }
+
+    public void setPosicao(PosicaoEmbarcacao posicao) {
+        this.posicao = posicao;
+    }
+
     public Casa getCasaPivot() {
-        return casaPivot;
+        return posicao.getCasaPivot();
     }
 
     public void setCasaPivot(Casa casaPivot) {
-        this.casaPivot = casaPivot;
+        posicao.setCasaPivot(casaPivot);
     }
 
     public Orientacao getOrientacao() {
-        return orientacao;
+        return posicao.getOrientacao();
     }
 
     public void setOrientacao(Orientacao orientacao) {
-        this.orientacao = orientacao;
+        posicao.setOrientacao(orientacao);
+    }
+
+
+    public TipoEmbarcacao getTipoEmbarcacao() {
+        return tipoEmbarcacao;
+    }
+
+    public void setTipoEmbarcacao(TipoEmbarcacao tipoEmbarcacao) {
+        this.tipoEmbarcacao = tipoEmbarcacao;
     }
 
     public Integer getCumprimentoEmCasas() {
-        return cumprimentoEmCasas;
+        return tipoEmbarcacao.getTamanho();
     }
 
-    public void setCumprimentoEmCasas(Integer cumprimentoEmCasas) {
-        this.cumprimentoEmCasas = cumprimentoEmCasas;
+    public List<Casa> getCasasOcupadas() {
+        return casasOcupadas;
+    }
+
+    public void setCasasOcupadas(List<Casa> casasOcupadas) {
+        this.casasOcupadas = casasOcupadas;
     }
 }

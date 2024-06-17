@@ -1,11 +1,16 @@
 package br.ufrn.imd.yeamanja.model;
 
 import br.ufrn.imd.yeamanja.model.enumerations.Orientacao;
+import br.ufrn.imd.yeamanja.model.enumerations.TipoEmbarcacao;
 
-public class NavioCoverta extends Navio {
+public class Corveta extends Embarcacao {
 
-    public NavioCoverta(Casa casaPivot, Orientacao orientacao) {
+    public Corveta(Casa casaPivot, Orientacao orientacao) {
         super(casaPivot, orientacao);
-        this.cumprimentoEmCasas = Constants.DIMENSAO_CORVETA;
+        this.tipoEmbarcacao = TipoEmbarcacao.CORVETA;
+    }
+
+    public Corveta() {
+        this.tipoEmbarcacao = TipoEmbarcacao.CORVETA;
     }
 }

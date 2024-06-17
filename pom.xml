@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>br.ufrn.imd.yeamanja/br.ufrn.imd.yeamanja.HelloApplication</mainClass>
+                            <mainClass>br.ufrn.imd.yeamanja/br.ufrn.imd.yeamanja.Application</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

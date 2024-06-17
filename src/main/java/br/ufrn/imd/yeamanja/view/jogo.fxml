@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" fx:controller="br.ufrn.imd.yeamanja.controller.JogoController" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21">
+   <children>
+      <GridPane layoutX="359.0" layoutY="338.0" fx:id="oceanoAmigo">
+        <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="NEVER" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+            <RowConstraints vgrow="NEVER" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" />
+        </rowConstraints>
+      </GridPane>
+   </children>
+</Pane>
