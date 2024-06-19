@@ -1,6 +1,7 @@
 package br.ufrn.imd.yeamanja.model;
 
 
+import br.ufrn.imd.yeamanja.model.dto.ResultadoTurno;
 import br.ufrn.imd.yeamanja.model.enumerations.TipoJogador;
 import br.ufrn.imd.yeamanja.model.interfaces.IJogador;
 
@@ -12,7 +13,7 @@ public abstract class Jogador implements IJogador {
     private TipoJogador tipo;
 
     @Override
-    public abstract Boolean jogaTurno(Tiro tiro, Jogador adversario);
+    public abstract ResultadoTurno jogaTurno(Tiro tiro, Jogador adversario);
 
     public boolean isDerrotado() {
         return tabuleiro.getEmbarcacoes().stream().allMatch(embarcacao -> embarcacao.isNavioAfundado());

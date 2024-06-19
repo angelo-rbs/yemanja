@@ -1,7 +1,9 @@
 package br.ufrn.imd.yeamanja.model;
 
+import br.ufrn.imd.yeamanja.model.dto.ResultadoTurno;
 import br.ufrn.imd.yeamanja.model.enumerations.StatusPartida;
 
+import javax.xml.transform.Result;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,10 +14,17 @@ public class Partida {
     StatusPartida status;
 
 
-
     // métodos funcionais
 
-    public Boolean partidaAcabou() {
+    public Boolean acabou() {
+
+        System.out.println("Tabuleiro do jogador antes do teste:");
+        jogador.getTabuleiro().print();
+        System.out.println();
+
+        System.out.println("Tabuleiro do bot antes do teste:");
+        bot.getTabuleiro().print();
+        System.out.println();
 
         int jogadoresDerrotados = 0;
 
@@ -29,34 +38,19 @@ public class Partida {
         return jogadoresDerrotados == jogadores.size() - 1;
     }
 
-    public Jogador getJogadorVencedor() {
 
-        if (!partidaAcabou()) return null;
-        List<Jogador> jogadores = new ArrayList<>(List.of(jogador, bot));
-
-
-        for (Jogador jogador : jogadores)
-            if (!jogador.isDerrotado()) return jogador;
-
-        return null;
+    public ResultadoTurno turnoJogador(Tiro tiro) {
+        return jogador.jogaTurno(tiro, bot);
     }
 
-    public Boolean turnoJogador(Tiro tiro) {
+    public ResultadoTurno turnoBot() {
 
-        Boolean acertouNavio = jogador.jogaTurno(tiro, bot);
-        System.out.format("Rodada %d: Fim do turno do jogador %s\n", rodadaAtual, jogador.getNome());
+        Casa casaEscolhida = jogador.getTabuleiro().getCasaSemNavioAleatoria();
+        Tiro tiro = new Tiro(casaEscolhida.getI(), casaEscolhida.getJ());
 
-        return acertouNavio;
-    }
+        ResultadoTurno resultado = bot.jogaTurno(tiro, jogador);
 
-    public Boolean turnoBot() {
-
-        Casa casaAtingida = jogador.getTabuleiro().getCasaSemNavioAleatoria();
-        Tiro tiro = new Tiro(casaAtingida.getI(), casaAtingida.getJ());
-        Boolean navioAtingido = bot.jogaTurno(tiro, jogador);
-        System.out.format("Rodada %d: Fim do turno do computador %s\n", rodadaAtual, bot.getNome());
-
-        return navioAtingido;
+        return resultado;
     }
 
     // método construtor

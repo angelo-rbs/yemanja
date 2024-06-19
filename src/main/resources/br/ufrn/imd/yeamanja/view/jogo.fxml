@@ -264,7 +264,7 @@
 
           <Pane fx:id="enemyCell80" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="0" />
           <Pane fx:id="enemyCell81" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="1" />
-          <Pane fx:id="enemyCell82" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+          <Pane fx:id="enemyCell82" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="2" /> 
           <Pane fx:id="enemyCell83" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="3" />
           <Pane fx:id="enemyCell84" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="4" />
           <Pane fx:id="enemyCell85" onMouseClicked="#celulaInimigaClicada" style="-fx-background-color: #0066ff;" GridPane.columnIndex="8" GridPane.rowIndex="5" />

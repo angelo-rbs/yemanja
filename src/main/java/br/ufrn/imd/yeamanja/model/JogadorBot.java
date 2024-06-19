@@ -1,9 +1,9 @@
 package br.ufrn.imd.yeamanja.model;
 
+import br.ufrn.imd.yeamanja.model.dto.ResultadoTurno;
 import br.ufrn.imd.yeamanja.model.enumerations.TipoJogador;
 
 public class JogadorBot extends Jogador {
-
 
     public JogadorBot(String nome) {
         super(nome);
@@ -11,11 +11,12 @@ public class JogadorBot extends Jogador {
     }
 
     @Override
-    public Boolean jogaTurno(Tiro tiro, Jogador adversario) {
+    public ResultadoTurno jogaTurno(Tiro tiro, Jogador adversario) {
 
-        Casa casaAtingida = adversario.getTabuleiro().getCasa(tiro.getI(), tiro.getJ());
-        casaAtingida.setTemTiro(tiro);
+        Casa casaAtacada = adversario.getTabuleiro().getCasa(tiro.getI(), tiro.getJ());
+        casaAtacada.setTemTiro(tiro);
+        Boolean embarcacaoAtingida = casaAtacada.getTemNavio() != null;
 
-        return casaAtingida.getTemNavio() != null;
+        return new ResultadoTurno(embarcacaoAtingida, casaAtacada);
     }
 }

@@ -198,19 +198,30 @@ public class Tabuleiro {
 
         List<Embarcacao> embarcacoes = new ArrayList<Embarcacao>(List.of(new Destroyer(), new Fragata(), new Submarino(), new Corveta()));
         popular(embarcacoes);
+        print();
+    }
 
+    public void print() {
         for (int i = 0; i < DIMENSAO_TABULEIRO; i++) {
             for (int j = 0; j < DIMENSAO_TABULEIRO; j++) {
-                if (casas[i][j].getTemNavio() != null)
-                    System.out.print("O");
-                else
-                    System.out.print("x");
+
+                if (casas[i][j].getTemNavio() != null) {
+
+                    if (casas[i][j].getTemTiro() != null)
+                        System.out.print("X");
+                    else
+                        System.out.print("O");
+                } else{
+                    if (casas[i][j].getTemTiro() != null)
+                        System.out.print("S");
+                    else
+                        System.out.print("-");
+                }
             }
             System.out.println();
         }
         System.out.println();
     }
-
 
     // métodos de acesso
 

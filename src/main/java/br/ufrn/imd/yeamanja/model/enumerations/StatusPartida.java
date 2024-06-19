@@ -7,7 +7,9 @@ public enum StatusPartida {
     AGUARDANDO_TIRO_BOT(false),
     AGUARDANDO_PROMPT_REINICIAR(true),
     EXIBINDO_INFORMACAO_INGAME(false),
-    EXIBINDO_INFORMACAO_OFFGAME(true);
+    EXIBINDO_INFORMACAO_OFFGAME(true),
+    VITORIA_JOGADOR(true),
+    VITORIA_BOT(true);
 
     StatusPartida(Boolean finalizado) {
         this.finalizado = finalizado;
