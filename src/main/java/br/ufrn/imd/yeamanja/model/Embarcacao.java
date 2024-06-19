@@ -5,6 +5,11 @@ import br.ufrn.imd.yeamanja.model.enumerations.TipoEmbarcacao;
 
 import java.util.List;
 
+/**
+ * representa uma embarcação genérica
+ *
+ * @author  ângelo barbosa
+ */
 public class Embarcacao {
 
     PosicaoEmbarcacao posicao;

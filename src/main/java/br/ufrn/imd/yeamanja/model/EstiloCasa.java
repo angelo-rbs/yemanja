@@ -1,5 +1,8 @@
 package br.ufrn.imd.yeamanja.model;
 
+/**
+ * aglutina os diferentes estilos em CSS das {@link Casa} do {@link Tabuleiro}
+ */
 public class EstiloCasa {
 
     public static final String CASA_INIMIGA_SELECIONADA = "-fx-border-color: #D0D02B; -fx-border-width: 5px; -fx-background-color: #0066ff;";

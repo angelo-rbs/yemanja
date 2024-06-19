@@ -3,6 +3,11 @@ package br.ufrn.imd.yeamanja.model;
 import br.ufrn.imd.yeamanja.model.dto.ResultadoTurno;
 import br.ufrn.imd.yeamanja.model.enumerations.TipoJogador;
 
+/**
+ * representa o jogador bot
+ *
+ * @author  ângelo barbosa
+ */
 public class JogadorBot extends Jogador {
 
     public JogadorBot(String nome) {

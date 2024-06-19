@@ -3,6 +3,11 @@ package br.ufrn.imd.yeamanja.model;
 import br.ufrn.imd.yeamanja.model.enumerations.Orientacao;
 import br.ufrn.imd.yeamanja.model.enumerations.TipoEmbarcacao;
 
+/**
+ * representa a embarcação de tipo fragata
+ *
+ * @author  ângelo barbosa
+ */
 public class Corveta extends Embarcacao {
 
     public Corveta(Casa casaPivot, Orientacao orientacao) {

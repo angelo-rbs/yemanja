@@ -1,9 +1,14 @@
 package br.ufrn.imd.yeamanja.model;
 
+/**
+ * registra estatísitcas da sessão de jogo
+ *
+ * @author  ângelo barbosa
+ */
 public class Estatistica {
 
-    public int vitorias;
-    public int derrotas;
+    private int vitorias;
+    private int derrotas;
 
 
     // método construtor
@@ -18,7 +23,6 @@ public class Estatistica {
     public int getVitorias() {
         return vitorias;
     }
-
 
     public int getDerrotas() {
         return derrotas;

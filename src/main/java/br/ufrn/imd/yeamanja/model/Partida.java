@@ -3,10 +3,14 @@ package br.ufrn.imd.yeamanja.model;
 import br.ufrn.imd.yeamanja.model.dto.ResultadoTurno;
 import br.ufrn.imd.yeamanja.model.enumerations.StatusPartida;
 
-import javax.xml.transform.Result;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * representa uma partida individual do jogo
+ *
+ * @author ângelo barbosa
+ */
 public class Partida {
 
     Jogador jogador, bot;
@@ -16,15 +20,11 @@ public class Partida {
 
     // métodos funcionais
 
+    /**
+     * verifica se a partida está encerrada
+     * @return um valor booleando indicado se a partida acabou
+     */
     public Boolean acabou() {
-
-        System.out.println("Tabuleiro do jogador antes do teste:");
-        jogador.getTabuleiro().print();
-        System.out.println();
-
-        System.out.println("Tabuleiro do bot antes do teste:");
-        bot.getTabuleiro().print();
-        System.out.println();
 
         int jogadoresDerrotados = 0;
 
@@ -38,11 +38,19 @@ public class Partida {
         return jogadoresDerrotados == jogadores.size() - 1;
     }
 
-
+    /**
+     * executa o movimento do jogador humano
+     * @param tiro tiro escolhido pelo jogador
+     * @return resultado do tiro executado
+     */
     public ResultadoTurno turnoJogador(Tiro tiro) {
         return jogador.jogaTurno(tiro, bot);
     }
 
+    /**
+     * executa o movimento do bot
+     * @return resultado do tiro executado
+     */
     public ResultadoTurno turnoBot() {
 
         Casa casaEscolhida = jogador.getTabuleiro().getCasaSemNavioAleatoria();
@@ -55,12 +63,19 @@ public class Partida {
 
     // método construtor
 
+    /**
+     * constrói a partida dado seus jogadores
+     * @param jogador jogador humano
+     * @param bot jogador bot
+     */
     public Partida(Jogador jogador, Jogador bot) {
         rodadaAtual = 1;
         this.jogador = jogador;
         this.bot = bot;
         this.status = StatusPartida.AGUARDANDO_SELECAO_CASA;
     }
+
+    // métodos de acesso
 
     public Jogador getJogador() {
         return jogador;

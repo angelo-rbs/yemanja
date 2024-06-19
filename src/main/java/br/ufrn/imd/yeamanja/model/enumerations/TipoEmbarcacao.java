@@ -1,5 +1,11 @@
 package br.ufrn.imd.yeamanja.model.enumerations;
 
+
+/**
+ * enumera os tipos de {@link br.ufrn.imd.yeamanja.model.Embarcacao}
+ *
+ * @author  ângelo barbosa
+ */
 public enum TipoEmbarcacao {
 
     CORVETA("Corveta", 2),

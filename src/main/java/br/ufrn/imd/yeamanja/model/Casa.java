@@ -1,9 +1,12 @@
 package br.ufrn.imd.yeamanja.model;
 
-import br.ufrn.imd.yeamanja.model.Constants.*;
+import static br.ufrn.imd.yeamanja.model.Constante.DIMENSAO_TABULEIRO;
 
-import static br.ufrn.imd.yeamanja.model.Constants.DIMENSAO_TABULEIRO;
-
+/**
+ * representa uma casa do {@link Tabuleiro}
+ *
+ * @author  ângelo barbosa
+ */
 public class Casa {
 
     private Embarcacao temEmbarcacao = null;

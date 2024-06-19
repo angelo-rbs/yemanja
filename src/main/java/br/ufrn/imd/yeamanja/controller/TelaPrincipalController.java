@@ -15,6 +15,11 @@ import java.net.URL;
 
 public class TelaPrincipalController {
 
+    /**
+     * exibe a tela do jogo
+     * @param event
+     * @throws IOException
+     */
     @FXML
     public void exibirJogo(ActionEvent event) throws IOException {
         Application.changeScene(Tela.JOGO);

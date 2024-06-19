@@ -1,5 +1,10 @@
 package br.ufrn.imd.yeamanja.model.enumerations;
 
+/**
+ * enumera os diferentes status da {@link br.ufrn.imd.yeamanja.model.Partida}
+ *
+ * @author  ângelo barbosa
+ */
 public enum StatusPartida {
 
     AGUARDANDO_SELECAO_CASA(false),

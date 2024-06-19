@@ -7,7 +7,6 @@ import javafx.animation.PauseTransition;
 import javafx.animation.SequentialTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -41,6 +40,11 @@ public class JogoController implements Initializable {
 
     Partida partida;
 
+    /**
+     * inicializa os estados do jogo
+     * @param location
+     * @param resources
+     */
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -65,6 +69,10 @@ public class JogoController implements Initializable {
         System.out.println("Jogo inicializado");
     }
 
+    /**
+     * lida com a sele~çao de uma célula do tabuleiro amigo
+     * @param event
+     */
     @FXML
     private void celulaAmigaClicada(MouseEvent event) {
 
@@ -114,6 +122,10 @@ public class JogoController implements Initializable {
         botaoAcao.setDisable(true);
     }
 
+    /**
+     * lida com a sele~çao de uma célula do tabuleiro inimigo
+     * @param event
+     */
     @FXML
     private void celulaInimigaClicada(MouseEvent event) {
 
@@ -159,6 +171,9 @@ public class JogoController implements Initializable {
         botaoAcao.setDisable(false);
     }
 
+    /**
+     * realiza o fluxo de uma rodada inteira
+     */
     public void handleIniciarRodada() throws InterruptedException {
 
 
@@ -221,6 +236,11 @@ public class JogoController implements Initializable {
         infoRodada.setText(String.format("Rodada %d", partida.getRodadaAtual()));
     }
 
+    /**
+     * exibe uma mensgem informativa do status do jogo na tela
+     * @param mensagem
+     * @throws InterruptedException
+     */
     public void informar(String mensagem) throws InterruptedException {
 
         String mensagemAnterior = statusJogo.getText();
@@ -241,6 +261,10 @@ public class JogoController implements Initializable {
         sequentialTransition.play();
     }
 
+    /**
+     * executa a animação do tiro do jogador humano
+     *
+     */
     public void playAnimacaoTiroPlayer(Tiro tiro) throws InterruptedException {
 
         PauseTransition inicio = new PauseTransition(new Duration(0));
@@ -290,6 +314,10 @@ public class JogoController implements Initializable {
         sequentialTransition.play();
     }
 
+    /**
+     * executa a animação do tiro do jogador bot
+     *
+     */
     public Boolean playAnimacaoTiroBot() throws InterruptedException {
 
         PauseTransition inicio = new PauseTransition(new Duration(0));
@@ -342,6 +370,13 @@ public class JogoController implements Initializable {
         return partida.acabou();
     }
 
+    /**
+     * encontra um nó do GridPane
+     * @param row linha do nó
+     * @param column coluna do nó
+     * @param gridPane GridPane dado
+     * @return o nó procurado
+     */
     public static <T> T getNodeByRowColumnIndex(final int row, final int column, GridPane gridPane) {
         for (javafx.scene.Node node : gridPane.getChildren()) {
             if (GridPane.getRowIndex(node) == row && GridPane.getColumnIndex(node) == column) {
@@ -351,6 +386,12 @@ public class JogoController implements Initializable {
         return null;
     }
 
+    /**
+     * verifica se uma casa foi alvo de um tiro de um jogador
+     * @param casa casa alvo
+     * @param tabuleiro tabuleiro que contém a casa
+     * @return um valor booleano indicando se a casa foi alvo de um tiro
+     */
     public Boolean casaAtingida(Pane casa, Tabuleiro tabuleiro) {
 
         String id = casa.getId();
@@ -360,6 +401,12 @@ public class JogoController implements Initializable {
         return tabuleiro.getCasa(i, j).getTemTiro() != null;
     }
 
+    /**
+     * verifica se uma casa está ocupada por uma embarcação
+     * @param casa casa a se verificada
+     * @param tabuleiro tabuleiro que contém a casa
+     * @return um valor booleano indicando se a casa é ocupada por uma embarcação
+     */
     public Boolean casaOcupada(Pane casa, Tabuleiro tabuleiro) {
         String id = casa.getId();
         Integer i = Integer.parseInt(id.substring(id.length() - 1));
@@ -368,22 +415,9 @@ public class JogoController implements Initializable {
         return tabuleiro.getCasa(i, j).getTemNavio() != null;
     }
 
-    private StatusPartida getStatusPartida() {
-        return partida.getStatus();
-    }
-
-    private void setStatusPartida(StatusPartida statusPartida) {
-        partida.setStatus(statusPartida);
-    }
-
-    private Boolean ehCelulaInimiga(Pane pane) {
-        return pane.getId().startsWith("enemyCell");
-    }
-
-    private Boolean ehCelulaAliada(Pane pane) {
-        return pane.getId().startsWith("friendCell");
-    }
-
+    /**
+     * reinicia os estados do jogo para iniciar uma nova partida
+     */
     void reiniciarPartida() {
 
         casaSelecionada = null;
@@ -430,4 +464,17 @@ public class JogoController implements Initializable {
             pane.getChildren().add(identificador);
         }
     }
+
+    private StatusPartida getStatusPartida() {
+        return partida.getStatus();
+    }
+
+    private void setStatusPartida(StatusPartida statusPartida) {
+        partida.setStatus(statusPartida);
+    }
+
+    private Boolean ehCelulaAliada(Pane pane) {
+        return pane.getId().startsWith("friendCell");
+    }
+
 }

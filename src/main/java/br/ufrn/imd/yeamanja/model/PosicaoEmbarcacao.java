@@ -2,6 +2,10 @@ package br.ufrn.imd.yeamanja.model;
 
 import br.ufrn.imd.yeamanja.model.enumerations.Orientacao;
 
+/**
+ * repreesnta a posição de uma embarcação no {@link Tabuleiro}
+ *
+ */
 public class PosicaoEmbarcacao {
 
     private Casa casaPivot;

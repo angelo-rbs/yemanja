@@ -6,10 +6,14 @@ import java.util.concurrent.ThreadLocalRandom;
 
 import br.ufrn.imd.yeamanja.model.enumerations.Orientacao;
 
-import static br.ufrn.imd.yeamanja.model.Constants.DIMENSAO_TABULEIRO;
+import static br.ufrn.imd.yeamanja.model.Constante.DIMENSAO_TABULEIRO;
 import static br.ufrn.imd.yeamanja.model.enumerations.Orientacao.*;
 
-
+/**
+ * representa o tabuleiro com os barcos de um jogador
+ *
+ * @author ângelo barbosa
+ */
 public class Tabuleiro {
 
     private Casa[][] casas = new Casa[DIMENSAO_TABULEIRO][DIMENSAO_TABULEIRO];
@@ -18,6 +22,10 @@ public class Tabuleiro {
 
     // métodos funcionais
 
+    /**
+     * popula o tabuleiro de embarcações
+     * @param embarcacoesParaPopular lista de embarcações para adicionar no tabuleiro
+     */
     public void popular(List<Embarcacao> embarcacoesParaPopular) {
         embarcacoesParaPopular.forEach(embarcacao -> {
             posicionarEmbarcacao(embarcacao);
@@ -27,6 +35,10 @@ public class Tabuleiro {
         populado = true;
     }
 
+    /**
+     * adiciona no tabuleiro uma embarcação numa posição livre aletória
+     * @param embarcacao embarcação a ser posicionada
+     */
     public void posicionarEmbarcacao(Embarcacao embarcacao) {
 
         PosicaoEmbarcacao posicao = encontrarPosicaoLivreParaEmbarcacao(embarcacao);
@@ -37,6 +49,11 @@ public class Tabuleiro {
         embarcacao.setPosicao(posicao);
     }
 
+    /**
+     * encontra uma posição livre no tabuleiro em que a embarcação dada cabe
+     * @param embarcacao embarcação a ser verificada
+     * @return posição livre
+     */
     public PosicaoEmbarcacao encontrarPosicaoLivreParaEmbarcacao(Embarcacao embarcacao) {
 
         Boolean achouPosicao = false;
@@ -54,6 +71,13 @@ public class Tabuleiro {
         return new PosicaoEmbarcacao(possivelPivot, possivelOrientacao);
     }
 
+    /**
+     * verifica se uma embarcação cabe na posição dada
+     * @param embarcacao embarcação a ser verificada
+     * @param possivelPivot casa pivô da posição da embarcação
+     * @param possivelOrientacao orientação da sequência de casas a partir do pivot a serem ocupadas
+     * @return
+     */
     public Boolean embarcacaoCabeNaPosicao(Embarcacao embarcacao, Casa possivelPivot, Orientacao possivelOrientacao) {
         List<Casa> casasDaPosicao = getSequenciaCasas(possivelPivot, possivelOrientacao, embarcacao.getCumprimentoEmCasas() - 1);
         if (casasDaPosicao == null) return false;
@@ -61,14 +85,20 @@ public class Tabuleiro {
                 .allMatch(possivelCasaOcupada -> possivelCasaOcupada.getTemNavio() == null);
     }
 
-    public Boolean embarcacaoCabeNaPosicao(List<Casa> casasDaPosicao) {
-        return casasDaPosicao.stream().allMatch(possivelCasaOcupada -> possivelCasaOcupada.getTemNavio() == null);
-    }
-
+    /**
+     * encontra e retorna as casas que uma embarcação ocupa
+     * @param embarcacao embarcação ocupante
+     * @return lista de casas ocupadas pela embarcação
+     */
     public List<Casa> getCasasOcupadasPorEmbarcacao(Embarcacao embarcacao) {
         return getSequenciaCasas(embarcacao.getCasaPivot(), embarcacao.getOrientacao(), embarcacao.getCumprimentoEmCasas() - 1);
     }
 
+    /**
+     * encontra e retorna a lista de todas as casas ocupada pelas embarcações dadas
+     * @param embarcacoes embarcações ocupantes
+     * @return lista de todas as casas ocupadas
+     */
     public List<Casa> getCasasOcupadasPorEmbarcacao(List<Embarcacao> embarcacoes) {
 
         List<Casa> casasOcupadas = new ArrayList<>();
@@ -79,9 +109,9 @@ public class Tabuleiro {
 
 
     /**
-     *
-     * @param casaPivot
-     * @param orientacao
+     * calcula e retorna a sequência de casas do tabuleiro correspondente aos parâmetros dados
+     * @param casaPivot casa que inicia a sequência
+     * @param orientacao direção da sequência a partir da casa pivot
      * @param tamanhoSequencia - quantidade de casas da sequência INCLUINDO a casa pivot
      * @return
      */
@@ -115,6 +145,12 @@ public class Tabuleiro {
         return sequencia;
     }
 
+    /**
+     * calcula e retorna a casa vizinha à casa dada na direção determinada
+     * @param casa casa de referência
+     * @param orientacao em qual direção se encontra a casa vizinha procurada em relação à referência
+     * @return casa vizinha
+     */
     public Casa getProximaCasa(Casa casa, Orientacao orientacao) {
 
         // não pode avançar fora do tabuleiro
@@ -132,14 +168,10 @@ public class Tabuleiro {
         };
     }
 
-    public Casa getCasaAleatoria() {
-
-        Integer i = ThreadLocalRandom.current().nextInt(0, DIMENSAO_TABULEIRO);
-        Integer j = ThreadLocalRandom.current().nextInt(0, DIMENSAO_TABULEIRO);
-
-        return casas[i][j];
-    }
-
+    /**
+     * encontra uma casa não ocupada por embarcações aleatória
+     * @return casa disponível
+     */
     public Casa getCasaSemNavioAleatoria() {
 
         Integer i, j;
@@ -158,24 +190,10 @@ public class Tabuleiro {
         return casaDisponivel;
     }
 
-    public Casa getCasaSemtiroAleatoria() {
-
-        Integer i, j;
-        Boolean isCasaDisponivel = false;
-        Casa casaDisponivel = null;
-
-
-        while (!isCasaDisponivel) {
-            i = ThreadLocalRandom.current().nextInt(0, DIMENSAO_TABULEIRO);
-            j = ThreadLocalRandom.current().nextInt(0, DIMENSAO_TABULEIRO);
-
-            casaDisponivel = casas[i][j];
-            isCasaDisponivel = casaDisponivel.getTemTiro() == null;
-        }
-
-        return casaDisponivel;
-    }
-
+    /**
+     * calcula e retorna uma orientação/direção aleatória
+     * @return a direção aleatória
+     */
     public Orientacao getOrientacaoAleatoria() {
 
         Orientacao orientacoes[] = { NORTE, SUL, LESTE, OESTE };
@@ -185,8 +203,9 @@ public class Tabuleiro {
     }
 
 
-    // construtor
-
+    /**
+     * cria o tubuleiro, suas cass, popula de embarcações e imprime seu esquema na saída padrão do sistema
+     */
     public Tabuleiro() {
         for (int i = 0; i < DIMENSAO_TABULEIRO; i++) {
             for (int j = 0; j < DIMENSAO_TABULEIRO; j++) {
@@ -201,6 +220,9 @@ public class Tabuleiro {
         print();
     }
 
+    /**
+     * imprime o tabuleiro na saída padrão do sistema
+     */
     public void print() {
         for (int i = 0; i < DIMENSAO_TABULEIRO; i++) {
             for (int j = 0; j < DIMENSAO_TABULEIRO; j++) {
@@ -225,6 +247,12 @@ public class Tabuleiro {
 
     // métodos de acesso
 
+    /**
+     * retorna uma casa dada
+     * @param i posição i (equivalente a x)
+     * @param j posição j (equivalente a y)
+     * @return casa referida
+     */
     public Casa getCasa(int i, int j) {
         return casas[i][j];
     }
